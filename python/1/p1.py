@@ -7,10 +7,10 @@ treb7uchet"""
 def find_answer_part_1(input: str) -> int:
     lines = input.split("\n")
     sum = 0
-    for i in lines:
-        if i == "":
+    for line in lines:
+        if line == "":
             continue
-        nums_only = "".join([j for j in i if not j.isalpha()])
+        nums_only = "".join([c for c in line if not c.isalpha()])
         le = len(nums_only)
         sum += int(nums_only[0])*10
         if le == 0:
