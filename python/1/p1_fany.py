@@ -5,7 +5,6 @@ treb7uchet"""
 
 
 def find_answer_part_1(input: str) -> int:
-
     return 0
 
 
